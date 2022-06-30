@@ -322,6 +322,7 @@
         z-index: 99999999;
         color: #fff;
         display: inline-block;
+        text-decoration: none;
         &:hover {
           background-color: #c8aa61;
           color: black;
@@ -445,7 +446,7 @@
         }
         .nav_Photo {
           position: relative;
-          background-image: url(//img/mask.jpg);
+          background-image: url(/img/mask.jpg);
           display: flex;
           justify-content: center;
           height: 45vh;

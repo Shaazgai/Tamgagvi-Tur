@@ -1,6 +1,6 @@
 .action {
   position: relative;
-  z-index: 11;
+  z-index: 8;
   top: 79%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -35,6 +35,7 @@
   -webkit-transition: color 0.4s linear;
   transition: color 0.4s linear;
   position: relative;
+  z-index: 11;
 }
 
 .action a button::before,
@@ -65,6 +66,7 @@
   color: #000000;
   -webkit-transition: 0.2s 0.1s;
   transition: 0.2s 0.1s;
+  z-index: 70;
 }
 
 .action a button::before {

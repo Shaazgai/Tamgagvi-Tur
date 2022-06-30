@@ -396,6 +396,7 @@
   z-index: 99999999;
   color: #fff;
   display: inline-block;
+  text-decoration: none;
 }
 
 #click .primary .link a:hover {
@@ -580,7 +581,7 @@
 
 #click .nav_grid .nav_right .nav_bottom .nav_Photo {
   position: relative;
-  background-image: url(//img/mask.jpg);
+  background-image: url(/img/mask.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

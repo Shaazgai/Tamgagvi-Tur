@@ -10,7 +10,7 @@ const Action = () => {
   return (
     <>
       <div className="action">
-        
+
         <Link href="/">
           <button><span>Discover waterloo</span></button>
         </Link>
