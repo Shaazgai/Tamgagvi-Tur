@@ -252,7 +252,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../public/img/shadow.png);
+  background: url(/img/shadow.png);
   background-size: cover;
   background-position: center;
 }
@@ -264,7 +264,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../public/img/dirty.png);
+  background: url(/img/dirty.png);
   background-size: cover;
   background-position: center;
 }
@@ -284,7 +284,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../public/img/nav_logo.png);
+  background-image: url(/img/nav_logo.png);
   width: 230px;
   height: 70px;
   margin: 0 0 60px;
@@ -405,7 +405,7 @@
 }
 
 #click .primary::before {
-  background: url(../public//img/shadow.png);
+  background: url(//img/shadow.png);
 }
 
 #click .nav_grid {
@@ -453,7 +453,7 @@
   left: 50%;
   top: 37%;
   margin-left: -6.5px;
-  background: transparent url(../public/img/slice.png) no-repeat left top;
+  background: transparent url(/img/slice.png) no-repeat left top;
   -webkit-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -466,7 +466,7 @@
   left: 50%;
   bottom: 37%;
   margin-left: -6.5px;
-  background: transparent url(../public/img/slice.png) no-repeat left top;
+  background: transparent url(/img/slice.png) no-repeat left top;
   -webkit-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -489,7 +489,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../public/img/Bigs.jpg);
+  background-image: url(/img/Bigs.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,7 +515,7 @@
 }
 
 #click .nav_grid .nav_right .nav_top {
-  background-image: url(../public/img/Halfs.jpg);
+  background-image: url(/img/Halfs.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,7 +553,7 @@
 
 #click .nav_grid .nav_right .nav_bottom .nav_photo {
   position: relative;
-  background-image: url(../public/img/Dulguun.jpg);
+  background-image: url(/img/Dulguun.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,7 +580,7 @@
 
 #click .nav_grid .nav_right .nav_bottom .nav_Photo {
   position: relative;
-  background-image: url(../public//img/mask.jpg);
+  background-image: url(//img/mask.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
