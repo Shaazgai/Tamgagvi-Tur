@@ -10,10 +10,13 @@ import womanImg from '../../public/img/woman.jpg';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar = ({setMutedVideo, mutedVideo}) => {
   const [showMe, setShowMe] = useState(false);
   function toggle() {
     setShowMe(!showMe);
+  }
+    const handleClick = () => {
+    setMutedVideo(current => !current);
   }
   return (
     <>
@@ -58,12 +61,17 @@ const Navbar = () => {
               </span>
             </a>
           </Link>
-          <Link  href="/">
-            <a className="right__right right__hover">
-              <VolumeUpIcon className="up" />
-            </a>
-            {/* <VolumeMuteIcon className="mute" /> */}
-          </Link>
+          
+          {mutedVideo && (
+             <button className="right__right right__hover" onClick={handleClick}>
+              <VolumeMuteIcon className="mute"/>
+            </button>
+          )}
+             {!mutedVideo && (
+             <button className="right__right right__hover" onClick={handleClick}>
+<VolumeUpIcon className="up"/>
+            </button>
+           )}
           <Link  href="/">
             <a className="right__last right__hover">
               <span>EN</span>

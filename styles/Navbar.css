@@ -146,6 +146,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
   width: 30px;
+  background-color: transparent;
 }
 
 .Menu .Menu__right .right__right .up {
@@ -157,7 +158,6 @@
   position: absolute;
   font-size: 20px;
   right: 2.2%;
-  display: none;
 }
 
 .Menu .Menu__right .right__last {

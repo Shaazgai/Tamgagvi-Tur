@@ -139,23 +139,15 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
       color: white;
       width: 30px;
-
+      background-color: transparent;
       .up {
-        // display: flex;
         font-size: 20px;
         position: absolute;
-        // &:hover{
-        //   display: none;
-        // }
       }
       .mute {
         position: absolute;
         font-size: 20px;
         right: 2.2%;
-        display: none;
-        // &:hover{
-        //   display: block ;
-        // }
       }
     }
     .right__last {

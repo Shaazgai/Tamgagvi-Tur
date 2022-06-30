@@ -9,7 +9,7 @@ const Title = () => {
           <h3>
             <span>_</span>
           </h3>
-          <h5></h5>
+          <h5></h5>git
         </div>
         <h2>The Last Battle</h2>
       </div>
