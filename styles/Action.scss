@@ -1,13 +1,12 @@
 .action {
-  position: relative;
-  z-index: 11;
-  top: 79%;
-  left: 50%;
-  // right: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 1200px;
-  display: flex;
-  justify-content: center;
+position: relative;
+z-index: 8;
+top: 79%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-width: 1200px;
+display: flex;
+justify-content: center;
   a {
     button {
       color: white;
@@ -29,6 +28,7 @@
       padding: 0 0 0 15px;
       transition: color 0.4s linear;
       position: relative;
+      
       &::before,
       ::after {
         position: absolute;
