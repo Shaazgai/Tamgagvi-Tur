@@ -1,0 +1,54 @@
+.layout {
+  position: relative;
+
+  .corner {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    z-index: 99;
+    &:nth-child(2) {
+      right: 0;
+    }
+    &:nth-child(3) {
+      bottom: 0;
+      right: 0;
+    }
+    &:nth-child(4) {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .frameSide {
+    position: absolute;
+    height: 10px;
+    width: 100vw;
+    z-index: 99;
+    &:nth-child(7) {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .frame {
+    position: absolute;
+    height: 100vh;
+    width: 10px;
+    top: 0;
+    z-index: 99;
+    &:nth-child(6) {
+      right: 0;
+    }
+    &:nth-child(8) {
+      left: 0;
+    }
+  }
+  .background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 10;
+  }
+}

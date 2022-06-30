@@ -1,0 +1,114 @@
+.action {
+  position: relative;
+  top: 79%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.action a button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font: normal 12px/61px 'Effra', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 61px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  min-width: 250px;
+  height: 67px;
+  margin: 0 auto 0 15px;
+  padding: 0 0 0 15px;
+  -webkit-transition: color 0.4s linear;
+  transition: color 0.4s linear;
+  position: relative;
+}
+
+.action a button::before,
+.action a button ::after {
+  position: absolute;
+  content: '';
+}
+
+.action a button span {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.action a button::before {
+  background-color: #c8aa61;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.action a button:hover {
+  background-color: #c8aa61;
+  border: none;
+  color: #000000;
+  -webkit-transition: 0.2s 0.1s;
+  transition: 0.2s 0.1s;
+}
+
+.action a button::before {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  width: 100%;
+}
+
+.action a button:hover::before {
+  height: 100%;
+}
+
+.mySwiper {
+  position: relative;
+  bottom: 0;
+  top: 82%;
+  z-index: 100;
+  text-align: center;
+}
+
+.mySwiper .text {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 10px;
+  font: italic normal 15px/20px 'Libre Baskerville', serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.mySwiper .author {
+  position: relative;
+  z-index: 1;
+  font: 300 10px/18px 'Effra', Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.swiper-slide {
+  opacity: 0 !important;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+/*# sourceMappingURL=Action.css.map */

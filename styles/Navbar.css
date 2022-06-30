@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Barlow:wght@400;600&family=Cormorant:ital,wght@0,500;1,500&family=Lato:ital,wght@0,400;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&family=Mulish:ital@0;1&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
+.Menu {
+  position: absolute;
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  top: 40px;
+}
+
+.Menu .Menu__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 30px;
+  color: white;
+  width: 50%;
+  z-index: 100;
+}
+
+.Menu .Menu__left .Menu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  width: 34px;
+  height: 34px;
+  color: white;
+}
+
+.Menu .Menu__left span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  line-height: 36px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-family: Libre Baskerville;
+  text-transform: uppercase;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.Menu .Menu__right {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 50%;
+  z-index: 100;
+  height: 3.4vh;
+}
+
+.Menu .Menu__right span .center__content {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+}
+
+.Menu .Menu__right .right__img {
+  position: relative;
+  z-index: 2;
+}
+
+.Menu .Menu__right .right__img img {
+  background-color: transparent;
+}
+
+.Menu .Menu__right .right__center {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  z-index: 2;
+  width: 25%;
+  color: white;
+}
+
+.Menu .Menu__right .right__center img {
+  position: relative;
+  z-index: 99999999;
+}
+
+.Menu .Menu__right .right__center .center__content {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  font-size: 20px;
+}
+
+.Menu .Menu__right .right__center span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.Menu .Menu__right .right__center span p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: -20px;
+  margin-left: 25px;
+}
+
+.Menu .Menu__right .right__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  width: 30px;
+}
+
+.Menu .Menu__right .right__right .up {
+  font-size: 20px;
+  position: absolute;
+}
+
+.Menu .Menu__right .right__right .mute {
+  position: absolute;
+  font-size: 20px;
+  right: 2.2%;
+  display: none;
+}
+
+.Menu .Menu__right .right__last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 30px;
+  font-size: 10px;
+}
+
+.Menu .Menu__right .right__hover {
+  -webkit-transition: color 0.4s linear;
+  transition: color 0.4s linear;
+  position: relative;
+}
+
+.Menu .Menu__right .right__hover::before,
+.Menu .Menu__right .right__hover ::after {
+  position: absolute;
+  content: '';
+}
+
+.Menu .Menu__right .right__hover span {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Menu .Menu__right .right__hover::before {
+  background-color: #c8aa61;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.Menu .Menu__right .right__hover:hover {
+  background-color: #c8aa61;
+  border: none;
+  color: #000000;
+  -webkit-transition: 0.2s 0.1s;
+  transition: 0.2s 0.1s;
+}
+
+.Menu .Menu__right .right__hover::before {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  width: 100%;
+}
+
+.Menu .Menu__right .right__hover:hover::before {
+  height: 100%;
+}
+
+.effect {
+  color: transparent;
+}
+
+#click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+#click .primary {
+  position: relative;
+  background: #19191a;
+  width: 360px;
+  padding: 88px 40px;
+  z-index: 10;
+}
+
+#click .primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../public/img/shadow.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#click .primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../public/img/dirty.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#click .primary .left_arrow {
+  position: absolute;
+  z-index: 100;
+  right: -24px;
+  top: 13%;
+  color: #c8aa61;
+  background-color: #19191a;
+}
+
+#click .primary .navIMG {
+  position: relative;
+  z-index: 999999;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../public/img/nav_logo.png);
+  width: 230px;
+  height: 70px;
+  margin: 0 0 60px;
+  margin-left: 16px;
+}
+
+#click .primary .first {
+  list-style: none;
+  text-align: center;
+  font: normal 10px/34px 'Effra', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-align: center;
+  padding: 45px 0;
+  text-transform: uppercase;
+}
+
+#click .primary .first li {
+  padding: 10px 0;
+}
+
+#click .primary .first li a {
+  position: relative;
+  z-index: 99999;
+  color: #c8aa61;
+  text-decoration: none;
+}
+
+#click .primary .first li a:hover {
+  color: white;
+}
+
+#click .primary .first::before {
+  content: '';
+  position: absolute;
+  z-index: 999999999;
+  top: 23%;
+  left: 50%;
+  margin: 0 0 0 -7px;
+  width: 13px;
+  height: 1px;
+  background: #c8aa61;
+}
+
+#click .primary .first::after {
+  content: '';
+  position: absolute;
+  bottom: 44%;
+  left: 50%;
+  margin: 0 0 0 -7px;
+  width: 13px;
+  height: 1px;
+  background: #c8aa61;
+}
+
+#click .primary .second {
+  position: relative;
+  list-style: none;
+  font: italic normal 14px/17px 'Libre Baskerville', serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: normal;
+  font-weight: 400;
+  text-align: center;
+  padding: 45px 0;
+}
+
+#click .primary .second li {
+  padding: 10px 0;
+}
+
+#click .primary .second li a {
+  text-decoration: none;
+  position: relative;
+  z-index: 99999;
+  color: #7d7d7d;
+}
+
+#click .primary .second li a:hover {
+  color: white;
+}
+
+#click .primary .link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#click .primary .link a {
+  border: 1px solid white;
+  border-color: rgba(255, 255, 255, 0.3);
+  padding: 0 20px;
+  font-size: 10px;
+  line-height: 34px;
+  letter-spacing: 1;
+  font-weight: 400;
+  font-family: effra;
+  z-index: 99999999;
+  color: #fff;
+  display: inline-block;
+}
+
+#click .primary .link a:hover {
+  background-color: #c8aa61;
+  color: black;
+  border: none;
+}
+
+#click .primary::before {
+  background: url(../public//img/shadow.png);
+}
+
+#click .nav_grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 9;
+}
+
+#click .nav_grid .need .categor {
+  position: relative;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#click .nav_grid .need .categor a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-family: effra;
+  text-transform: uppercase;
+}
+
+#click .nav_grid .need .categor a::before {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  left: 50%;
+  top: 37%;
+  margin-left: -6.5px;
+  background: transparent url(../public/img/slice.png) no-repeat left top;
+  -webkit-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#click .nav_grid .need .categor a::after {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  left: 50%;
+  bottom: 37%;
+  margin-left: -6.5px;
+  background: transparent url(../public/img/slice.png) no-repeat left top;
+  -webkit-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#click .nav_grid .need .categor strong {
+  color: yellow;
+  font-size: 10px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: effra;
+  text-transform: uppercase;
+  padding: 3px 0 0 0;
+}
+
+#click .nav_grid .nav_left {
+  height: 100vh;
+  width: 790px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../public/img/Bigs.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#click .nav_grid .nav_left::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #4a4160), color-stop(70%, transparent));
+  background-image: linear-gradient(to top, #4a4160 1%, transparent 70%);
+}
+
+#click .nav_grid .nav_right {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#click .nav_grid .nav_right .nav_top {
+  background-image: url(../public/img/Halfs.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 60;
+  height: 55vh;
+  width: 780px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#click .nav_grid .nav_right .nav_top::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #662b21), color-stop(70%, transparent));
+  background-image: linear-gradient(to top, #662b21 1%, transparent 70%);
+}
+
+#click .nav_grid .nav_right .nav_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 60;
+}
+
+#click .nav_grid .nav_right .nav_bottom .nav_photo {
+  position: relative;
+  background-image: url(../public/img/Dulguun.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45vh;
+  width: 390px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#click .nav_grid .nav_right .nav_bottom .nav_photo::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #253a3f), color-stop(70%, transparent));
+  background-image: linear-gradient(to top, #253a3f 1%, transparent 70%);
+}
+
+#click .nav_grid .nav_right .nav_bottom .nav_Photo {
+  position: relative;
+  background-image: url(../public//img/mask.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45vh;
+  width: 390px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#click .nav_grid .nav_right .nav_bottom .nav_Photo::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #477a5b), color-stop(70%, transparent));
+  background-image: linear-gradient(to top, #477a5b 1%, transparent 70%);
+}
+/*# sourceMappingURL=Navbar.css.map */

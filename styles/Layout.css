@@ -1,0 +1,66 @@
+.layout {
+  position: relative;
+}
+
+.layout .corner {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 99;
+}
+
+.layout .corner:nth-child(2) {
+  right: 0;
+}
+
+.layout .corner:nth-child(3) {
+  bottom: 0;
+  right: 0;
+}
+
+.layout .corner:nth-child(4) {
+  bottom: 0;
+  left: 0;
+}
+
+.layout .frameSide {
+  position: absolute;
+  height: 10px;
+  width: 100vw;
+  z-index: 99;
+}
+
+.layout .frameSide:nth-child(7) {
+  bottom: 0;
+  left: 0;
+}
+
+.layout .frame {
+  position: absolute;
+  height: 100vh;
+  width: 10px;
+  top: 0;
+  z-index: 99;
+}
+
+.layout .frame:nth-child(6) {
+  right: 0;
+}
+
+.layout .frame:nth-child(8) {
+  left: 0;
+}
+
+.layout .background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+}
+/*# sourceMappingURL=Layout.css.map */
