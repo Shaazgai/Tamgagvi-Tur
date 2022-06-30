@@ -8,146 +8,180 @@ import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 import manImg from '../../public/img/man.jpg';
 import womanImg from '../../public/img/woman.jpg';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-// import nav_logo from '..            /../public/img/nav_logo.png';
-// import big from '../../public/img/big.jpg';
-// import halfimg from '../../public/img/halfimg.jpg';
-// import b1 from '../../public/img/b1.jpg';
-// import b2 from '../../public/img/b2.jpg';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [showMe, setShowMe] = useState(false);
-  function toggle(){
+  function toggle() {
     setShowMe(!showMe);
   }
   return (
     <>
-    
-      <section className="Menu" style={{
-        display: showMe?"none":"flex"
-      }}>
+      <section
+        className="Menu"
+        style={{
+          display: showMe ? 'none' : 'flex',
+        }}
+      >
         <div className="Menu__left" onClick={toggle}>
           {!showMe && (
             <>
-            <a className="Menu__content" href="#">
-            <MenuIcon />
-          </a>
-          <span>Menu</span></>
+              <Link href="/">
+                <a className="Menu__content">
+                  <MenuIcon />
+                </a>
+              </Link>
+              <span>Menu</span>
+            </>
           )}
         </div>
         <div className="Menu__right">
-          <a className="right__img" href="/">
-            <Image src={manImg} width={32} height={32} />
-          </a>
-          <a className="right__img" href="/">
-            <Image src={womanImg} alt="" width={32} height={32} />
-          </a>
-          <a
-            className="right__center right__hover"
+          <Link href="/">
+            <a className="right__img">
+              <Image src={manImg} width={32} height={32} />
+            </a>
+          </Link>
+          <Link href="/">
+            <a className="right__img">
+              <Image src={womanImg} alt="" width={32} height={32} />
+            </a>
+          </Link>
+          <Link
+            
             href="https://www.facebook.com/tamgagui"
           >
-            <span>
-              {' '}
-              <FacebookIcon className="center__content" />{' '}
-              <p>WATERLOO ON FACEBOOK</p>{' '}
-            </span>
-          </a>
-          <a className="right__right right__hover" href="#">
-            <VolumeUpIcon className="up" />
-            <VolumeMuteIcon className="mute" />
-          </a>
-          <a className="right__last right__hover" href="/">
-            <span>EN</span>
-          </a>
+            <a className="right__center right__hover">
+              <span>
+                {' '}
+                <FacebookIcon className="center__content" />{' '}
+                <p>WATERLOO ON FACEBOOK</p>{' '}
+              </span>
+            </a>
+          </Link>
+          <Link  href="/">
+            <a className="right__right right__hover">
+              <VolumeUpIcon className="up" />
+            </a>
+            {/* <VolumeMuteIcon className="mute" /> */}
+          </Link>
+          <Link  href="/">
+            <a className="right__last right__hover">
+              <span>EN</span>
+            </a>
+          </Link>
         </div>
       </section>
 
-      <div style={{
-        display: showMe?"block":"none"
-      }}>
+      <div
+        style={{
+          display: showMe ? 'block' : 'none',
+        }}
+      >
         <section id="click">
-        <div className="primary">
-          <div className="navIMG"></div>
-          <ul className="first">
-            <li>
-              <a href="/">Synoposys</a>
-            </li>
-            <li>
-              <a href="/">Trailers</a>
-            </li>
-            <li>
-              <a href="/">Cast and crew</a>
-            </li>
-            <li>
-              <a href="/">Experience</a>
-            </li>
-            <li>
-              <a href="/">Behind the scenes</a>
-            </li>
-            <li>
-              <a href="/">News</a>
-            </li>
-          </ul>
-          <ul className="second">
-            <li>
-              <a href="/">Agenda</a>
-            </li>
-            <li>
-              <a href="/">Press area</a>
-            </li>
-            <li>
-              <a href="/">Partners</a>
-            </li>
-          </ul>
-          <div className="link" href="https://www.youtube.com/watch?v=LGs_vGt0MY8">
-            <a>Waterloo on facebook</a>
-          </div>
-          <a className="left_arrow" href="/"> <KeyboardArrowLeftIcon/></a>
-
-          </div>
-        <div className="nav_grid">
-          <div className="nav_left need">
-            <div className="categor">
-              <a href="/">
-                Waterloo <br /> 1815
+          <div className="primary">
+            <div className="navIMG"></div>
+            <ul className="first">
+              <li>
+                <Link href="/">
+                  <a>Synoposys</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Trailers</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Cast and crew</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Experience</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Behind the scenes</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>News</a>
+                </Link>
+              </li>
+            </ul>
+            <ul className="second">
+              <li>
+                <Link href="/">
+                  <a>Agenda</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Press area</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Partners</a>
+                </Link>
+              </li>
+            </ul>
+            <div className="link">
+              <Link href="https://www.youtube.com/watch?v=LGs_vGt0MY8">
+                <a>Waterloo on facebook</a>
+              </Link>
+            </div>
+            <Link  href="/">
+              <a href="#" className="left_arrow" onClick={toggle}>
+                <KeyboardArrowLeftIcon />
               </a>
-              <strong>Experince</strong>
-            </div>
+            </Link>
           </div>
-          <div className="nav_right need">
-            <div className="nav_top need">
+          <div className="nav_grid">
+            <div className="nav_left need">
               <div className="categor">
-                <a href="/">
-                  About
-                </a>
-                <strong>Synopsis</strong>
+                <Link href="/">
+                  <a>
+                    Waterloo <br /> 1815
+                  </a>
+                </Link>
+                <strong>Experince</strong>
               </div>
             </div>
-            <div className="nav_bottom">
-              <div className="nav_photo">
+            <div className="nav_right need">
+              <div className="nav_top need">
                 <div className="categor">
-                  <a href="/">
-                    Official trailer
-                  </a>
-                  <strong>Trailers</strong>
+                  <Link href="/">
+                    <a>About</a>
+                  </Link>
+                  <strong>Synopsis</strong>
                 </div>
               </div>
-              <div className="nav_Photo">
-                <div className="categor">
-                  <a href="/">
-                    The making of
-                  </a>
-                  <strong>Behind the scenes</strong>
+              <div className="nav_bottom">
+                <div className="nav_photo">
+                  <div className="categor">
+                    <Link href="/">
+                      <a>Official trailer</a>
+                    </Link>
+                    <strong>Trailers</strong>
+                  </div>
+                </div>
+                <div className="nav_Photo">
+                  <div className="categor">
+                    <Link href="/">
+                      <a>The making of</a>
+                    </Link>
+                    <strong>Behind the scenes</strong>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
-
-      
-      
     </>
   );
 };

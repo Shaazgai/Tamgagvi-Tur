@@ -3,21 +3,23 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper';
 import 'swiper/css/effect-fade';
 import 'swiper/css';
+// import Link from 'next/link';
+import { Link } from '@mui/material';
 
 const Action = () => {
   return (
     <>
       <div className="action">
         
-        <a href="/">
+        <Link href="/">
           <button><span>Discover waterloo</span></button>
-        </a>
-        <a href="/">
+        </Link>
+        <Link href="/">
           <button><span>Watch the trailer</span></button>
-        </a>
-        <a href="/">
+        </Link>
+        <Link href="/">
            <button><span>the game</span></button>
-        </a>
+        </Link>
       </div>
        <Swiper
         modules={[Autoplay, EffectFade]}
