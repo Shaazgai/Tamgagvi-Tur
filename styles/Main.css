@@ -13,8 +13,10 @@
 
 video {
   position: absolute;
-  z-index: -111111;
+  z-index: -111;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
 }
 /*# sourceMappingURL=Main.css.map */

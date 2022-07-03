@@ -34,7 +34,7 @@ const Navbar = ({setMutedVideo, mutedVideo}) => {
                   <MenuIcon />
                 </a>
               </Link>
-              <span>Menu</span>
+              <span>Цэс</span>
             </>
           )}
         </div>
@@ -57,7 +57,7 @@ const Navbar = ({setMutedVideo, mutedVideo}) => {
               <span>
                 {' '}
                 <FacebookIcon className="center__content" />{' '}
-                <p>WATERLOO ON FACEBOOK</p>{' '}
+                <p>Тамгагүй төр</p>{' '}
               </span>
             </a>
           </Link>
@@ -74,7 +74,7 @@ const Navbar = ({setMutedVideo, mutedVideo}) => {
            )}
           <Link  href="/">
             <a className="right__last right__hover">
-              <span>EN</span>
+              <span>МОН</span>
             </a>
           </Link>
         </div>
@@ -91,55 +91,55 @@ const Navbar = ({setMutedVideo, mutedVideo}) => {
             <ul className="first">
               <li>
                 <Link href="/">
-                  <a>Synoposys</a>
+                  <a>Бидний тухай</a>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a>Trailers</a>
+                  <a>Жүжгийн талаар</a>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a>Cast and crew</a>
+                  <a>Түүх</a>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a>Experience</a>
+                  <a>Дүрүүд</a>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a>Behind the scenes</a>
+                  <a>Тасалбар</a>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a>News</a>
+                  <a>Тун удахгүй</a>
                 </Link>
               </li>
             </ul>
             <ul className="second">
               <li>
                 <Link href="/">
-                  <a>Agenda</a>
+                  <a>Холбоо барих</a>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a>Press area</a>
+                  <a>Тоглолтын хуваарь</a>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a>Partners</a>
+                  <a>Хамтран байгууллагууд</a>
                 </Link>
               </li>
             </ul>
             <div className="link">
               <Link href="https://www.youtube.com/watch?v=LGs_vGt0MY8">
-                <a>Waterloo on facebook</a>
+                <a>Тамгагүй төр facebook</a>
               </Link>
             </div>
             <Link  href="/">
@@ -153,36 +153,36 @@ const Navbar = ({setMutedVideo, mutedVideo}) => {
               <div className="categor">
                 <Link href="/">
                   <a>
-                    Waterloo <br /> 1815
+                    Тамгагүй төр <br /> 1998      
                   </a>
                 </Link>
-                <strong>Experince</strong>
+                <strong>Туршлага</strong>
               </div>
             </div>
             <div className="nav_right need">
               <div className="nav_top need">
                 <div className="categor">
                   <Link href="/">
-                    <a>About</a>
+                    <a>Бидний тухай </a>
                   </Link>
-                  <strong>Synopsis</strong>
+                  <strong>Гарал үүсэл</strong>
                 </div>
               </div>
               <div className="nav_bottom">
                 <div className="nav_photo">
                   <div className="categor">
                     <Link href="/">
-                      <a>Official trailer</a>
+                      <a>Жүжгийн хэсгээс</a>
                     </Link>
-                    <strong>Trailers</strong>
+                    <strong>танилцуулга</strong>
                   </div>
                 </div>
                 <div className="nav_Photo">
                   <div className="categor">
                     <Link href="/">
-                      <a>The making of</a>
+                      <a>Тун удахгүй</a>
                     </Link>
-                    <strong>Behind the scenes</strong>
+                    <strong>Тайзны ард</strong>
                   </div>
                 </div>
               </div>

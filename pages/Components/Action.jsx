@@ -12,13 +12,13 @@ const Action = () => {
       <div className="action">
 
         <Link href="/">
-          <button><span>Discover waterloo</span></button>
+          <button><span>Өгүүлэл</span></button>
         </Link>
         <Link href="/">
-          <button><span>Watch the trailer</span></button>
+          <button><span>Тасалбар захиалах</span></button>
         </Link>
         <Link href="/">
-           <button><span>the game</span></button>
+           <button><span>Дүрүүд</span></button>
         </Link>
       </div>
        <Swiper
@@ -37,16 +37,15 @@ const Action = () => {
 
           <SwiperSlide className="swiper">
             <p className="text">
-              « extremely well done documentary that combines educational
-              intelligence and art of suspense »
+                « Мөнх тэнгэрийн шивнэж хэлсэн үгийг Бавуугийн Лхагвасүрэн гуай гайхамшигтай буулгажээ... » 
             </p>
-            <p className="author">Nicolas Crousse, Le Mad du Soir</p>
+            <p className="author">Тэнгэрийн дор "үнэн" байх ёстой!</p>
           </SwiperSlide>
           <SwiperSlide className="swiper">
             <p className="text">
-            « Spectacular film »
+            « Тамгагүй төр »
             </p>
-            <p className="author">Davide Cacciatore, La Capitale</p>
+            <p className="author">1998 онд Улсын драмын эрдмийн театрт</p>
           </SwiperSlide>
           
         

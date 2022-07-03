@@ -14,7 +14,7 @@
 
 video {
   position: absolute;
-  z-index: -111111;
+  z-index: -111;
   object-fit: cover;
-  // display: none;
+filter: grayscale(40%);
 }

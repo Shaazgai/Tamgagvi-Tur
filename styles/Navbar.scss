@@ -179,7 +179,7 @@
     position: relative;
     background: #19191a;
     width: 360px;
-    padding: 88px 40px;
+    padding: 60px 40px;
     z-index: 10;
 
     &::before {
@@ -219,9 +219,9 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url(/img/nav_logo.png);
+      background-image: url(/img/tamgagviTur.png);
       width: 230px;
-      height: 70px;
+      height: 180px;
       margin: 0 0 60px;
       margin-left: 16px;
     }
@@ -253,7 +253,7 @@
         content: '';
         position: absolute;
         z-index: 999999999;
-        top: 23%;
+        top: 32%;
         left: 50%;
         margin: 0 0 0 -7px;
         width: 13px;
@@ -263,7 +263,7 @@
       &::after {
         content: '';
         position: absolute;
-        bottom: 44%;
+        bottom: 35%;
         left: 50%;
         margin: 0 0 0 -7px;
         width: 13px;
