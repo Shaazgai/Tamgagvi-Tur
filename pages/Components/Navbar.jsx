@@ -133,7 +133,7 @@ const Navbar = ({setMutedVideo, mutedVideo}) => {
               </li>
               <li>
                 <Link href="/">
-                  <a>Хамтран байгууллагууд</a>
+                  <a>Хамтрагч байгууллагууд</a>
                 </Link>
               </li>
             </ul>
