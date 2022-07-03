@@ -43,7 +43,7 @@ const Action = () => {
             « Мөнх тэнгэрийн шивнэж хэлсэн үгийг Бавуугийн Лхагвасүрэн гуай
             гайхамшигтай буулгажээ... »
           </p>
-          <p className="author">Тэнгэрийн дор "үнэн" байх ёстой!</p>
+          <p className="author">Тэнгэрийн дор үнэн байх ёстой!</p>
         </SwiperSlide>
         <SwiperSlide className="swiper">
           <p className="text">« Тамгагүй төр »</p>
@@ -51,7 +51,7 @@ const Action = () => {
         </SwiperSlide>
       </Swiper>
     </>
-  );
+  )
 };
 
 export default Action;
