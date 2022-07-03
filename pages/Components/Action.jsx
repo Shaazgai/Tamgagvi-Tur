@@ -10,20 +10,24 @@ const Action = () => {
   return (
     <>
       <div className="action">
-
         <Link href="/">
-          <button><span>Өгүүлэл</span></button>
+          <button>
+            <span>Өгүүлэл</span>
+          </button>
         </Link>
         <Link href="/">
-          <button><span>Тасалбар захиалах</span></button>
+          <button>
+            <span>Тасалбар захиалах</span>
+          </button>
         </Link>
         <Link href="/">
-           <button><span>Дүрүүд</span></button>
+          <button>
+            <span>Дүрүүд</span>
+          </button>
         </Link>
       </div>
-       <Swiper
+      <Swiper
         modules={[Autoplay, EffectFade]}
-        
         effect={'fade'}
         spaceBetween={30}
         className="mySwiper"
@@ -34,21 +38,17 @@ const Action = () => {
         loop
         speed={500}
       >
-
-          <SwiperSlide className="swiper">
-            <p className="text">
-                « Мөнх тэнгэрийн шивнэж хэлсэн үгийг Бавуугийн Лхагвасүрэн гуай гайхамшигтай буулгажээ... » 
-            </p>
-            <p className="author">Тэнгэрийн дор "үнэн" байх ёстой!</p>
-          </SwiperSlide>
-          <SwiperSlide className="swiper">
-            <p className="text">
-            « Тамгагүй төр »
-            </p>
-            <p className="author">1998 онд Улсын драмын эрдмийн театрт</p>
-          </SwiperSlide>
-          
-        
+        <SwiperSlide className="swiper">
+          <p className="text">
+            « Мөнх тэнгэрийн шивнэж хэлсэн үгийг Бавуугийн Лхагвасүрэн гуай
+            гайхамшигтай буулгажээ... »
+          </p>
+          <p className="author">Тэнгэрийн дор "үнэн" байх ёстой!</p>
+        </SwiperSlide>
+        <SwiperSlide className="swiper">
+          <p className="text">« Тамгагүй төр »</p>
+          <p className="author">1998 онд Улсын драмын эрдмийн театрт</p>
+        </SwiperSlide>
       </Swiper>
     </>
   );
